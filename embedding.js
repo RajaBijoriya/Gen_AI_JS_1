@@ -12,7 +12,7 @@ async function init() {
   const result = await model.embedContent("I love to code");
 
   // Embedding vector
-  console.log(result.embedding.values);
+  console.log(result.embedding.values[0].length());
 }
 
 init();
